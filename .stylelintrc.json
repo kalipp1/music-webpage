@@ -1,0 +1,30 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-recommended-scss"
+    ],
+    "plugins": [
+      "stylelint-scss"
+    ],
+    "rules": {
+      "block-opening-brace-space-before": "always",
+      "indentation": 2,
+      "no-missing-end-of-source-newline": true,
+      "no-eol-whitespace": true,
+      "block-no-empty": true,
+      "color-no-invalid-hex": true,
+      "comment-empty-line-before": null,
+      "declaration-colon-space-after": "always",
+      "declaration-block-semicolon-newline-after": "always",
+      "declaration-block-trailing-semicolon": "always",
+      "max-nesting-depth": [3, {
+        "ignore": ["pseudo-classes"]
+      }],
+      "unit-allowed-list": null,
+      "no-descending-specificity": null,
+      "scss/selector-no-redundant-nesting-selector": true,
+      "scss/no-duplicate-dollar-variables": true,
+      "scss/no-global-function-names": null,
+      "no-empty-source": null
+    }
+  }

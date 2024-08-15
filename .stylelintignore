@@ -1,0 +1,6 @@
+src/fonts/
+src/sass/partials/_bootstrap.scss
+src/sass/partials/_layout.scss
+src/sass/partials/_normalize.scss
+src/sass/partials/_typography.scss
+src/sass/style.scss
