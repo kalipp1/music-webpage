@@ -1,16 +1,6 @@
 {
-    "extends": [
-      "stylelint-config-standard",
-      "stylelint-config-recommended-scss"
-    ],
-    "plugins": [
-      "stylelint-scss"
-    ],
+    "extends": "stylelint-config-recommended-scss",
     "rules": {
-      "block-opening-brace-space-before": "always",
-      "indentation": 2,
-      "no-missing-end-of-source-newline": true,
-      "no-eol-whitespace": true,
       "block-no-empty": true,
       "color-no-invalid-hex": true,
       "comment-empty-line-before": null,
@@ -24,7 +14,7 @@
       "no-descending-specificity": null,
       "scss/selector-no-redundant-nesting-selector": true,
       "scss/no-duplicate-dollar-variables": true,
-      "scss/no-global-function-names": null,
-      "no-empty-source": null
-    }
+      "scss/no-global-function-names": null
+    },
+    "scss/at-extend-no-missing-placeholder": null
   }

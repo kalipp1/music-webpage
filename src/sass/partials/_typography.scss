@@ -2,8 +2,27 @@
     font-family: $font-bold;
     font-size: 100px;
     text-transform: uppercase;
+    letter-spacing: 50px;
+    margin-left: 40px;
 }
 
+.header_h3{
+    font-family: $font-bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.sub_h2{
+    font-family: $font-regular;
+    font-size: 60px;
+    text-transform: uppercase;
+    .bolder{
+        font-weight: bolder;
+        padding-left: 25px;
+    }
+    color: $color-white;
+}
 .h1 {
     font-family: $font-bold;
     font-size: 26px;

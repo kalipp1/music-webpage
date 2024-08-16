@@ -3,13 +3,10 @@
   }
 
   body {
+    background-color: $color-black;
     margin: 0;
-    // background: lighten($color-dark, 75%);
-    // font-family: $font-text;
     font-size: 14px;
     line-height: 1.7;
-    // font-weight: $font-normal;
-    // color: $color-dark;
   }
 
   .container {
@@ -26,5 +23,123 @@
     position: relative;
     text-align: center;
     color: $color-white;
-    height: 700px;
+    height: 100vh;
   }
+
+  .header_text_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .pages__wrapper{
+    background-color: $color-black;
+    height: 100vh;
+  }
+
+  .main-nav {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    position: absolute;
+    bottom: ($base-size * -8);
+    margin-left: -12vh;
+    a {
+      @extend %h2-placeholder;
+      color: $color-white;
+      text-decoration: none;
+      font-size: 10px;
+      margin-right: ($base-size * 2);
+      text-align: center;
+      padding: 12px 24px;
+      background: $color-black;
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+  
+      &.active {
+        background: lighten($color-black, 75%);
+      }
+  
+    }
+    &.hidden{
+      display: none;
+    }
+   }
+
+   .subscribe__page{
+    background-image: url("../../images/subscribe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .album__info{
+        color: white;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 600px;
+        margin-top: 80vh;
+        margin-left: 18vh;
+        text-align: right;
+        h2{
+            letter-spacing: 0px;
+        }
+        h1{
+            text-transform: uppercase;
+            color: $color-gray;
+        }
+    }
+    .author__name{
+        color: $color-white;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 50vh;
+        .further{
+            margin-left: 7vh;
+            .red{
+                color: $color-red;
+            }
+        }
+    }
+    .music__cover{
+        float: right;
+        margin-top: 20vh;
+        margin-right: 37vh;
+        img{
+            height: 400px;
+            width: 300px;
+        }
+    }
+    .subscribe__text{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2{
+        display: inline-flex;
+        letter-spacing: 15px;
+    }
+   }
+   
+   .footer{
+    background-color: $color-black;
+    color: $color-white;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 500px;
+    margin-top: 5vh;
+    text-align: center;
+   }

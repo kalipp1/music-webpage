@@ -36,3 +36,21 @@ $color-red: #cf383e;
 $color-white: #fff;
 $color-gray: #bfbfbf;
 $color-black: #131313;
+
+$radius: 4px;
+$base-size: 12px;
+
+%h1-placeholder {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+%h2-placeholder {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+%h3-placeholder {
+  font-size: 1.2em;
+  font-weight: normal;
+}
