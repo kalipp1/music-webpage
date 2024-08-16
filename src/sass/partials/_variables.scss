@@ -1,33 +1,38 @@
-// fonts
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/src/fonts/source-sans-pro.regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "Source Sans Pro";
+  src: url("/src/fonts/source-sans-pro.regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/src/fonts/source-sans-pro.bold.ttf') format('truetype');
+  font-family: "Source Sans Pro";
+  src: url("/src/fonts/source-sans-pro.bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/src/fonts/SourceSansPro-Semibold.ttf') format('truetype');
+  font-family: "Source Sans Pro";
+  src: url("/src/fonts/SourceSansPro-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/src/fonts/SourceSansPro-Black.ttf') format('truetype');
+  font-family: "Source Sans Pro";
+  src: url("/src/fonts/SourceSansPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
-$font-regular: 'Source Sans Pro', sans-serif;
-$font-bold: 'Source Sans Pro', sans-serif;
-$font-semibold: 'Source Sans Pro', sans-serif;
-$font-black: 'Source Sans Pro', sans-serif;
+$font-regular: "Source Sans Pro", sans-serif;
+$font-bold: "Source Sans Pro", sans-serif;
+$font-semibold: "Source Sans Pro", sans-serif;
+$font-black: "Source Sans Pro", sans-serif;
+
+// Colors 
+$color-red: #cf383e;
+$color-white: #fff;
+$color-gray: #bfbfbf;
+$color-black: #131313;
