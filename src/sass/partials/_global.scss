@@ -100,6 +100,9 @@
         right: 50%;
         transform: translate(-50%, -50%);
         margin-top: 50vh;
+        .further-dean{
+            margin-left: 4vh;
+        }
         .further{
             margin-left: 7vh;
             .red{
@@ -142,4 +145,22 @@
     width: 500px;
     margin-top: 5vh;
     text-align: center;
+   }
+
+   .btn{
+    background-color: $color-red;
+    border: 15px solid $color-red;
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: $font-semibold;
+    font-size: 20px;
+    padding-inline: 15px;
+   }
+
+   .join-btn{
+    right: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    margin-top: 46vh;
    }
