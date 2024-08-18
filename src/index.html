@@ -17,17 +17,58 @@
             </div>
         </div>
     </header>
-    <section id="pages">
-        <div class="pages__wrapper">
-            <div class="main-nav">
-                <a href="#homepage">Home</a>
-                <a href="#search">Search</a>
-                <a href="#discover">Discover</a>
+    <div id="pages">
+        <section id="homepage">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage">Home</a>
+                    <a href="#search">Search</a>
+                    <a href="#discover">Discover</a>
+                </div>
+                <div class="container">
+                    <div class="music__wrapper render-music"></div>
+                </div>
             </div>
-            <div class="render-music">
+        </section>
+        <section id="search">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage">Home</a>
+                    <a href="#search">Search</a>
+                    <a href="#discover">Discover</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="container">
+                <div class="music__wrapper">
+                    <h1>Search</h1>
+                </div>
+                <div class="music__wrapper search-bar">
+                    <h3>Name</h3>
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="" name="query" class="search-input">
+                        <button type="submit" class="btn search-btn">search</button>
+                    </form>
+                </div>
+                <div class="music__wrapper render-music"></div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage">Home</a>
+                    <a href="#search">Search</a>
+                    <a href="#discover">Discover</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="music__wrapper">
+                    <h1>Discover</h1>
+                    <h5>Give it a try!</h5>
+                </div>
+                <div class="music__wrapper render-music"></div>
+            </div>
+        </section>
+    </div>
     <section id="subscribe">
         <div class="subscribe__page">
             <div class="subscribe__text">
