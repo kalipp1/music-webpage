@@ -15,13 +15,7 @@ const app = {
           pageMatchingHash = page.id;
           break;
         }
-        const mainNav = document.querySelector(select.nav.wrapper);
       console.log(pageMatchingHash);
-      if(pageMatchingHash === 'homepage'){
-        mainNav.classList.add('hidden');
-      }else{
-        mainNav.classList.remove('hidden');
-      }
       thisApp.activatePage(pageMatchingHash);
 
       for(let link of thisApp.navLinks){
@@ -34,11 +28,6 @@ const app = {
 
           // run thisApp.activatePage with that id
           thisApp.activatePage(id);
-          if(id === 'homepage'){
-            mainNav.classList.add('hidden');
-          }else{
-            mainNav.classList.remove('hidden');
-          }
           // change URL hash
           window.location.hash = '#/' + id;
         });
@@ -49,13 +38,13 @@ const app = {
         const thisApp = this;
         // add class "active" to matching pages. remove from non-matching
         for(let page of thisApp.pages){
-          page.classList.toggle(classNames.pages.active, page.id == pageId);
+          page.classList.toggle(classNames.pages.active, page.id === pageId);
         }
         // add class "active" to matching links. remove from non-matching
         for(let link of thisApp.navLinks){
           link.classList.toggle(
             classNames.nav.active, 
-            link.getAttribute('href') == '#' + pageId
+            link.getAttribute('href') === '#' + pageId
           );
         }
       },
