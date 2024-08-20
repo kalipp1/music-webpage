@@ -181,10 +181,28 @@
     left: 50%;
     transform: translateX(-60%);
     position: absolute;
-    margin-top: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 12vh;
+    display: block;
+    color: $color-white;
+    .discover{
+        margin-left: 2vh;
+    }
+    h5{
+        margin-left: 5vh;
+    }
    }
+
+.search-bar{
+    left: 50%;
+    transform: translateX(-60%);
+    position: absolute;
+    margin-top: 20vh;
+    display: inline-flex;
+    margin-left: 3vh;
+    color: $color-white;
+    .name{
+        margin-right: 2vh;
+    }
+}
 
    
