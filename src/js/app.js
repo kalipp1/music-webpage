@@ -1,4 +1,5 @@
-import {select, classNames} from './settings.js';
+import {select, classNames, settings} from './settings.js';
+import Song from './components/Song.js';
 const app = {
     initPages: function(){
         const thisApp = this;
@@ -49,9 +50,35 @@ const app = {
           );
         }
       },
+      initSongs: function(){
+        const thisApp = this;
+        // console.log('thisApp.data: ', thisApp.data);
+        const homeSongsList = document.querySelector(select.homepage.musicWrapper);
+        for(let songData of thisApp.data.songs){
+          new Song(songData, homeSongsList);
+        }
+      },
+      initData: function(){
+        const thisApp = this;
+        
+        thisApp.data = {};
+        const url = settings.db.url + '/' + settings.db.songs;
+        fetch(url)
+        .then(function(rawResponse){
+          return rawResponse.json();
+        })
+        .then(function(parsedResponse){
+  
+          // save parsedResponse as thisApp.data.products
+          thisApp.data.songs = parsedResponse;
+          // execute initMenu method
+          thisApp.initSongs();
+        });
+      },
     init: function(){
         const thisApp = this;
         thisApp.initPages();
+        thisApp.initData();
       },
 }
 
