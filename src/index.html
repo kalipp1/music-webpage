@@ -97,9 +97,9 @@
 
     <script id="template-music-list" type="text/x-handlebars-template">
           <div class="song" id="audio-{{id}}">
-                <h1>{{author}} - {{title}}</h1>
+                <h1><span class="center">{{author}} - {{title}}</span></h1>
                 <div class="audio"><audio src="./songs/{{filename}}"></audio></div>
-                 <p>Categories: {{#each categories}}{{this}},{{/each}} #{{ranking}} in the ranking</p>
+                 <p>Categories: {{#each categories}}{{this}},{{/each}} <span class="right-side">#{{ranking}} in the ranking</span></p>
           </div>
       </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
