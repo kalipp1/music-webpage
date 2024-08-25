@@ -7,3 +7,35 @@
       display: block;
     }
   }
+
+  .footer{
+    background-color: $color-black;
+    color: $color-white;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 500px;
+    margin-top: 5vh;
+    text-align: center;
+   }
+
+  .header__wrapper{
+    background-image: url("../../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: $color-white;
+    height: 100vh;
+  }
+
+  .header_text_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 2vh;
+  }

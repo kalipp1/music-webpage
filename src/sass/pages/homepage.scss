@@ -6,3 +6,78 @@
     justify-content: center;
     display: flex;
 }
+
+.subscribe__page{
+    background-image: url("../../images/subscribe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .album__info{
+        color: white;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 600px;
+        margin-top: 80vh;
+        margin-left: 15vh;
+        text-align: right;
+        h2{
+            letter-spacing: 0px;
+        }
+        h1{
+            text-transform: uppercase;
+            color: $color-gray;
+        }
+    }
+    .author__name{
+        color: $color-white;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 50vh;
+        font-size: 32px;
+        .further-dean{
+            margin-left: 4vh;
+        }
+        .further{
+            margin-left: 7vh;
+            .red{
+                color: $color-red;
+            }
+        }
+    }
+    .music__cover{
+        float: right;
+        margin-top: 20vh;
+        margin-right: 37vh;
+        img{
+            height: 400px;
+            width: 300px;
+        }
+    }
+    .subscribe__text{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2{
+        display: inline-flex;
+        letter-spacing: 15px;
+    }
+   }
+
+.join-btn{
+    right: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    margin-top: 46vh;
+   }

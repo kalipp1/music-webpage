@@ -1,5 +1,6 @@
 import {select, classNames, settings} from './settings.js';
 import Song from './components/Song.js';
+import Discover from './components/Discover.js';
 const app = {
     initPages: function(){
         const thisApp = this;
@@ -58,6 +59,15 @@ const app = {
           new Song(songData, homeSongsList);
         }
       },
+      initDiscover: function(){
+        const thisApp = this;
+
+        const discoverSongWrapper = document.querySelector(select.discover.musicWrapper);
+
+        for(let songData of thisApp.data.songs){
+          new Discover(songData, discoverSongWrapper);
+        }
+      },
       initData: function(){
         const thisApp = this;
         
@@ -73,6 +83,7 @@ const app = {
           thisApp.data.songs = parsedResponse;
           // execute initMenu method
           thisApp.initSongs();
+          thisApp.initDiscover();
         });
       },
     init: function(){

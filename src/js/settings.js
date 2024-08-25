@@ -11,6 +11,9 @@ export const select = {
       },
     homepage: {
       musicWrapper: "#homepage .music__wrapper",
+    },
+    discover:{
+      musicWrapper: "#discover .music__wrapper",
     }
 };
 
