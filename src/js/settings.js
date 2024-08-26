@@ -14,6 +14,10 @@ export const select = {
     },
     discover:{
       musicWrapper: "#discover .render-music",
+    },
+    search: {
+      searchWrapper: '#search .render-music',
+      searchBar: '.search-input',
     }
 };
 
