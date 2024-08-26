@@ -23,7 +23,7 @@
   .main-nav {
     left: 50%;
     right: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-95%, -50%);
     display: inline-flex;
     position: absolute;
     bottom: ($base-size * -8);
@@ -69,10 +69,12 @@
     width: fit-content;
     color: $color-white;
     .discover{
-        margin-right: 4vh;
+      position: relative;
+      left: -20%;
     }
     h5{
-        margin-left: 1vh;
+      position: relative;
+      left: -10%;
     }
     .search_h1{
       margin-right: 3.3vh;

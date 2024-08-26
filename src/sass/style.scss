@@ -1,6 +1,6 @@
-@import "partials/variables";
+@import "./variables";
 @import "partials/global";
 @import "partials/typography";
 @import "partials/layout";
-@import "pages/homepage.scss";
-@import "pages/search.scss";
+@import "pages/homepage";
+@import "pages/search";

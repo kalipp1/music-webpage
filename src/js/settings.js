@@ -13,7 +13,7 @@ export const select = {
       musicWrapper: "#homepage .music__wrapper",
     },
     discover:{
-      musicWrapper: "#discover .music__wrapper",
+      musicWrapper: "#discover .render-music",
     }
 };
 

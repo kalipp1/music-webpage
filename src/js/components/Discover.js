@@ -1,5 +1,6 @@
 import {utils} from '../utils.js';
 import { templates } from '../settings.js';
+
 class Discover {
     constructor(data, elem){
         console.log(data);
@@ -22,6 +23,7 @@ class Discover {
             const generatedHTML = templates.musicList(thisMusic.data);
             const element = utils.createDOMFromHTML(generatedHTML);
             elem.appendChild(element);
+            new GreenAudioPlayer('#audio-'+thisMusic.id+' .audio');
         }
     }
 }

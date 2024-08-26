@@ -39,9 +39,13 @@ const app = {
       },
     activatePage: function(pageId){
         const thisApp = this;
+        console.log(pageId);
         // add class "active" to matching pages. remove from non-matching
         for(let page of thisApp.pages){
           page.classList.toggle(classNames.pages.active, page.id === pageId);
+          if(page.classList === classNames.pages.active){
+            thisApp.initDiscover();
+          }
         }
         // add class "active" to matching links. remove from non-matching
         for(let link of thisApp.navLinks){
@@ -59,7 +63,7 @@ const app = {
           new Song(songData, homeSongsList);
         }
       },
-      initDiscover: function(){
+      Discover: function(){
         const thisApp = this;
 
         const discoverSongWrapper = document.querySelector(select.discover.musicWrapper);
@@ -82,10 +86,16 @@ const app = {
           // save parsedResponse as thisApp.data.products
           thisApp.data.songs = parsedResponse;
           // execute initMenu method
+          thisApp.Discover();
           thisApp.initSongs();
-          thisApp.initDiscover();
         });
       },
+      // initDiscover: function(pageId){
+      //   const thisApp = this;
+      //   if(pageId === "discover"){
+      //     thisApp.Discover();
+      //   }
+      // },
     init: function(){
         const thisApp = this;
         thisApp.initPages();
