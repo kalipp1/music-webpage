@@ -18,9 +18,12 @@ class Search {
     }
     searchSong(){
         const thisMusic = this;
-        thisMusic.dom.searchBar.addEventListener('input', function(){
+        thisMusic.dom.searchBar.addEventListener('change', function(){
             const searchBarValue = thisMusic.dom.searchBar.value;
         });
+    }
+    renderSong(){
+        
     }
 }
 
