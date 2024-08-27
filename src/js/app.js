@@ -1,6 +1,7 @@
 import {select, classNames, settings} from './settings.js';
 import Song from './components/Song.js';
 import Discover from './components/Discover.js';
+import Search from './components/Search.js';
 const app = {
     initPages: function(){
         const thisApp = this;
@@ -43,9 +44,6 @@ const app = {
         // add class "active" to matching pages. remove from non-matching
         for(let page of thisApp.pages){
           page.classList.toggle(classNames.pages.active, page.id === pageId);
-          if(page.classList === classNames.pages.active){
-            thisApp.initDiscover();
-          }
         }
         // add class "active" to matching links. remove from non-matching
         for(let link of thisApp.navLinks){
@@ -53,6 +51,10 @@ const app = {
             classNames.nav.active, 
             link.getAttribute('href') === '#' + pageId
           );
+        }
+        if(pageId === "discover" && thisApp.data && thisApp.data.songs.length > 0){
+          console.log(pageId, thisApp.data.songs);
+          thisApp.Discover();
         }
       },
       initSongs: function(){
@@ -68,9 +70,15 @@ const app = {
 
         const discoverSongWrapper = document.querySelector(select.discover.musicWrapper);
 
-        for(let songData of thisApp.data.songs){
-          new Discover(songData, discoverSongWrapper);
-        }
+        new Discover(thisApp.data.songs, discoverSongWrapper);
+        
+      },
+      initSearch: function(){
+        const thisApp = this;
+
+        const searchSongWrapper = document.querySelector(select.search.searchWrapper);
+
+        new Search(thisApp.data.songs, searchSongWrapper);
       },
       initData: function(){
         const thisApp = this;
@@ -87,6 +95,7 @@ const app = {
           thisApp.data.songs = parsedResponse;
           // execute initMenu method
           thisApp.Discover();
+          thisApp.initSearch();
           thisApp.initSongs();
         });
       },

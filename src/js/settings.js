@@ -16,7 +16,8 @@ export const select = {
       musicWrapper: "#discover .render-music",
     },
     search: {
-      searchWrapper: '#search .render-music',
+      searchWrapper: '#search',
+      searchWrapperRender: '.render-music',
       searchBar: '.search-input',
     }
 };
