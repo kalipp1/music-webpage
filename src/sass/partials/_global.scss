@@ -68,17 +68,27 @@
     margin-right: auto;
     width: fit-content;
     color: $color-white;
-    .discover{
-      position: relative;
-      left: -20%;
+   }
+
+   @media (min-width:320px) and (max-width:480px){
+    body{
+      font-size: 10px;
+      line-height: 1.7;
     }
-    h5{
-      position: relative;
-      left: -10%;
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    .search_h1{
-      margin-right: 4vh;
-    }
+    .main-nav {
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-flex;
+      position: absolute;
+      bottom: ($base-size * -8);
+      margin-left: -12vh;
+     }
    }
 
 

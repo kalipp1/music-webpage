@@ -1,0 +1,24 @@
+.music__wrapper{
+    .discover{
+        position: relative;
+        left: -20%;
+      }
+      h5{
+        position: relative;
+        left: -10%;
+      }
+    .render-music{
+        .discover-wrapper{
+          margin-top: 1vh;
+        }
+      }
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .discover{
+        margin-left: 23vh;
+      }
+      h5{
+        margin-left: 20.5vh;
+      }
+}
