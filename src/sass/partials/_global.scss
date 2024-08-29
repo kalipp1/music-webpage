@@ -91,5 +91,22 @@
      }
    }
 
+   @media (min-width:540px) and (max-width:1030px){
+    .main-nav {
+      left: 50%;
+      right: 50%;
+      transform: translate(-30%, -50%);
+      display: inline-flex;
+      position: absolute;
+      bottom: ($base-size * -8);
+      margin-left: -12vh;
+     }
+     .container {
+      max-width: 1030px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+   }
+
 
    

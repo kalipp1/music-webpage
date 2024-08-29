@@ -42,3 +42,22 @@
         }
     }
 }
+
+@media (min-width:540px) and (max-width:1030px){
+    .music__wrapper{
+        .search_h1{
+            margin-left: 2.9vh;
+          }
+    }
+    .search-bar{
+        left: 50%;
+        transform: translateX(-55%);
+        position: absolute;
+        display: inline-flex;
+        color: $color-white;
+        .name{
+            margin-right: 1vh;
+            margin-top: -1.5vh;
+        }
+    }
+}
