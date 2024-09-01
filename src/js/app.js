@@ -2,6 +2,7 @@ import {select, classNames, settings} from './settings.js';
 import Song from './components/Song.js';
 import Discover from './components/Discover.js';
 import Search from './components/Search.js';
+import Homepage from './components/HomepageMusic.js';
 const app = {
     initPages: function(){
         const thisApp = this;
@@ -80,6 +81,12 @@ const app = {
 
         new Search(thisApp.data.songs, searchSongWrapper);
       },
+      initHomepage: function(){
+        const thisApp = this;
+
+        const homeSongsList = document.querySelector(select.homepage.musicWrapper);
+        new Homepage(thisApp.data.songs, homeSongsList);
+      },
       initData: function(){
         const thisApp = this;
         
@@ -97,6 +104,7 @@ const app = {
           thisApp.Discover();
           thisApp.initSearch();
           thisApp.initSongs();
+          thisApp.initHomepage();
         });
       },
       // initDiscover: function(pageId){

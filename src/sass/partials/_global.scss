@@ -28,7 +28,7 @@
     position: absolute;
     bottom: ($base-size * -8);
     margin-left: -12vh;
-    a {
+    .main-nav-btn {
       @extend %h2-placeholder;
       color: $color-white;
       text-decoration: none;

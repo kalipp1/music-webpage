@@ -11,6 +11,7 @@ export const select = {
       },
     homepage: {
       musicWrapper: "#homepage .music__wrapper",
+      categoriesContainer: '.categories',
     },
     discover:{
       musicWrapper: "#discover .render-music",
@@ -28,6 +29,9 @@ export const classNames = {
     },
     pages: {
       active: 'active',
+    },
+    homepage: {
+      clicked: 'clicked',
     }
   };
 

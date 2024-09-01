@@ -84,6 +84,21 @@
     margin-top: 46vh;
    }
 
+.categories{
+    display: inline-flex;
+    color: $color-white;
+    position: absolute;
+    top: 100%;
+    a{
+        padding-inline: 5px;
+        text-decoration: none;
+        color: $color-white;
+    }
+    .clicked{
+        color: $color-red;
+    }
+}
+
    @media (min-width:320px) and (max-width:480px){
     .subscribe__page{
         background-image: url("../../images/subscribe.jpg");
