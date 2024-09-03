@@ -21,7 +21,7 @@ class Homepage{
 
         for(let category of allCategories){
             const categoryLink = document.createElement('a');
-            categoryLink.href = '#';
+            categoryLink.href = '#'+category;
             categoryLink.textContent = category;
 
             thisMusic.categoriesContainer.appendChild(categoryLink);
@@ -34,7 +34,7 @@ class Homepage{
                     link.classList.remove(classNames.homepage.clicked);
                 });
                 clickedElement.classList.add(classNames.homepage.clicked);
-                thisMusic.generateSongs(clickedElement);
+                thisMusic.generateSongs(clickedElement.getAttribute('href').replace('#', ''));
             });
         }
     }
@@ -42,15 +42,18 @@ class Homepage{
         const thisMusic = this;
         const musicWrapper = document.querySelector(select.homepage.musicWrapper);
 
-        const filteredSongs = thisMusic.data.filter(item => 
-            item.categories.includes(selectedCategory)
-        );
+        const filteredSongs = thisMusic.data.filter(function(item){
+            return item.categories.includes(selectedCategory)
+        });
 
-        const generatedHTML = templates.musicList(filteredSongs);
-
-        const element = utils.createDOMFromHTML(generatedHTML);
+        console.log(filteredSongs);
         musicWrapper.innerHTML = "";
-        musicWrapper.appendChild(element);
+        for(let song of filteredSongs){
+            const generatedHTML = templates.musicList(song);
+            const element = utils.createDOMFromHTML(generatedHTML);
+            musicWrapper.appendChild(element);
+            new GreenAudioPlayer('#audio-'+song.id+' .audio');
+        }
     }
 }
 

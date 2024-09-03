@@ -3,7 +3,6 @@ import { templates } from '../settings.js';
 
 class Discover {
     constructor(data, elem){
-        console.log(data);
         const thisMusic = this;
         thisMusic.id = data.id;
         thisMusic.data = data;
@@ -15,7 +14,6 @@ class Discover {
         const songAmount = thisMusic.data.length;
         const min = 1; //dont change 
         thisMusic.randomNumber = Math.floor(Math.random() * (songAmount) + min);
-        console.log(thisMusic.randomNumber);
     }
     render(elem){
         const thisMusic = this;

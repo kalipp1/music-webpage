@@ -3,7 +3,6 @@ import { templates, select } from '../settings.js';
 
 class Search {
     constructor(data, elem){
-        console.log(data);
         const thisMusic = this;
         thisMusic.id = data.id;
         thisMusic.data = data;
@@ -14,7 +13,6 @@ class Search {
     getElements(elem){
      const thisMusic = this;
      
-     console.log(elem);
      thisMusic.dom = {};
      thisMusic.dom.wrapper = elem;
      thisMusic.dom.searchBar = thisMusic.dom.wrapper.querySelector(select.search.searchBar);
@@ -24,7 +22,6 @@ class Search {
         const thisMusic = this;
         thisMusic.dom.searchBar.addEventListener('input', function(){
             let searchBarValue = thisMusic.dom.searchBar.value.toLowerCase();
-            console.log(searchBarValue);
             if(!searchBarValue.length){
                 thisMusic.dom.renderMusic.innerHTML = "";
                 return;
