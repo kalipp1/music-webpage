@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>MyMusic</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header_text_wrapper">
+                <h1 class="header_h1">taste</h1>
+                <h3 class="header_h3">engage<br>in<br>art</h3>
+            </div>
+        </div>
+    </header>
+    <div id="pages">
+        <section id="homepage" class="active">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage" class="main-nav-btn">Home</a>
+                    <a href="#search" class="main-nav-btn">Search</a>
+                    <a href="#discover" class="main-nav-btn">Discover</a>
+                    <div class="categories">
+                        Categories:
+                        <!-- <a href="">Powerful</a>
+                        <a href="">Relax</a>
+                        <a href="">Fun</a>
+                        <a href="">Western</a>
+                        <a href="">Insomnia</a>
+                        <a href="">Mystery</a> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="music__wrapper render-music"></div>
+                </div>
+            </div>
+            <section id="subscribe">
+                <div class="subscribe__page">
+                    <div class="subscribe__text">
+                        <h2 class="sub_h2">
+                            subscribe <span class="bolder">now</span>
+                        </h2>
+                    </div>
+                    <div class="join-btn">
+                        <a class="btn" href="#">join now</a>
+                    </div>
+                    <div class="author__name">
+                        <h1><span class="further-dean">Dean</span><br><span class="further">Han<span class="red">son</span></span></h1>
+                    </div>
+                    <div class="music__cover">
+                        <img src="/images/artist.jpg" alt="musicCover">
+                    </div>
+                    <div class="album__info">
+                        <h1>new album</h1>
+                        <h2>Available only for subscribers</h2>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="search">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage" class="main-nav-btn">Home</a>
+                    <a href="#search" class="main-nav-btn">Search</a>
+                    <a href="#discover" class="main-nav-btn">Discover</a>
+                </div>
+            <div class="container">
+                <div class="music__wrapper">
+                    <h1 class="search_h1">Search</h1>
+                    <div class="search-bar">
+                        <div class="name"><h3>Name</h3></div>
+                        <form action="/search" method="get">
+                            <input type="text" placeholder="" name="query" class="search-input">
+                            <button type="submit" class="hidden">123</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="music__wrapper render-music"></div>
+            </div>
+            </div>
+        </section>
+        <section id="discover">
+            <div class="pages__wrapper">
+                <div class="main-nav">
+                    <a href="#homepage" class="main-nav-btn">Home</a>
+                    <a href="#search" class="main-nav-btn">Search</a>
+                    <a href="#discover" class="main-nav-btn">Discover</a>
+                </div>
+            <div class="container">
+                <div class="music__wrapper">
+                    <h1 class="discover">Discover</h1>
+                    <h5>Give it a try!</h5>
+                </div>
+                <div class="music__wrapper render-music discover-wrapper"></div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>All right reserved</p>
+    </footer>
+
+    <script id="template-music-list" type="text/x-handlebars-template">
+          <div class="song" id="audio-{{id}}">
+                <h1><span class="center">{{author}} - {{title}}</span></h1>
+                <div class="audio"><audio src="./songs/{{filename}}"></audio></div>
+                 <p>Categories: {{#each categories}}{{this}},{{/each}} <span class="right-side">#{{ranking}} in the ranking</span></p>
+          </div>
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

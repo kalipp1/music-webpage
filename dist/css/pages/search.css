@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/source-sans-pro.regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/source-sans-pro.bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.search-input {
+  border: 0;
+  border-radius: 5px;
+}
+
+.search-bar {
+  left: 50%;
+  transform: translateX(-65%);
+  position: absolute;
+  display: inline-flex;
+  color: #fff;
+}
+.search-bar .name {
+  margin-right: 1vh;
+  margin-top: -2.2vh;
+}
+
+.music__wrapper .search_h1 {
+  margin-right: 4vh;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .music__wrapper .search_h1 {
+    margin-right: -5vh;
+    margin-left: 5vh;
+  }
+  .search-bar {
+    left: 62%;
+    transform: translateX(-65%);
+    position: absolute;
+    display: inline-flex;
+    color: #fff;
+  }
+  .search-bar .name {
+    margin-right: 1vh;
+    margin-top: -2.2vh;
+  }
+}
+@media (min-width: 540px) and (max-width: 1030px) {
+  .music__wrapper .search_h1 {
+    margin-left: 2.9vh;
+  }
+  .search-bar {
+    left: 50%;
+    transform: translateX(-55%);
+    position: absolute;
+    display: inline-flex;
+    color: #fff;
+  }
+  .search-bar .name {
+    margin-right: 1vh;
+    margin-top: -1.5vh;
+  }
+}
+
+/*# sourceMappingURL=search.css.map */

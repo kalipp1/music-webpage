@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/source-sans-pro.regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/source-sans-pro.bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.right-side {
+  float: right;
+}
+
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.subscribe__page {
+  background-image: url("../../images/subscribe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.subscribe__page .album__info {
+  color: white;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 600px;
+  margin-top: 80vh;
+  margin-left: 15vh;
+  text-align: right;
+}
+.subscribe__page .album__info h2 {
+  letter-spacing: 0px;
+}
+.subscribe__page .album__info h1 {
+  text-transform: uppercase;
+  color: #bfbfbf;
+}
+.subscribe__page .author__name {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50vh;
+  font-size: 32px;
+}
+.subscribe__page .author__name .further-dean {
+  margin-left: 4vh;
+}
+.subscribe__page .author__name .further {
+  margin-left: 7vh;
+}
+.subscribe__page .author__name .further .red {
+  color: #cf383e;
+}
+.subscribe__page .music__cover {
+  float: right;
+  margin-top: 20vh;
+  margin-right: 37vh;
+}
+.subscribe__page .music__cover img {
+  height: 400px;
+  width: 300px;
+}
+.subscribe__page .subscribe__text {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.subscribe__page h2 {
+  display: inline-flex;
+  letter-spacing: 15px;
+}
+
+.join-btn {
+  right: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: inline-block;
+  margin-top: 46vh;
+}
+
+.categories {
+  display: inline-flex;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+}
+.categories a {
+  padding-inline: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.categories .clicked {
+  color: #cf383e;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe__page {
+    background-image: url("../../images/subscribe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 85px;
+    height: 100vh;
+  }
+  .subscribe__page .album__info {
+    color: white;
+    left: 50%;
+    right: 50%;
+    transform: translate(-75%, -50%);
+    position: absolute;
+    width: 600px;
+    margin-top: 80vh;
+    margin-left: 15vh;
+    text-align: right;
+  }
+  .subscribe__page .album__info h2 {
+    letter-spacing: 0px;
+  }
+  .subscribe__page .album__info h1 {
+    text-transform: uppercase;
+    color: #bfbfbf;
+  }
+  .subscribe__page .author__name {
+    color: #fff;
+    position: absolute;
+    left: 70%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 42vh;
+    font-size: 32px;
+  }
+  .subscribe__page .author__name .further-dean {
+    margin-left: 4vh;
+  }
+  .subscribe__page .author__name .further {
+    margin-left: 7vh;
+  }
+  .subscribe__page .author__name .further .red {
+    color: #cf383e;
+  }
+  .subscribe__page .music__cover {
+    float: right;
+    margin-top: 10vh;
+    margin-right: 0vh;
+  }
+  .subscribe__page .music__cover img {
+    height: 200px;
+    width: 150px;
+  }
+  .subscribe__page .subscribe__text {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    left: 63%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .subscribe__page h2 {
+    display: inline-flex;
+    letter-spacing: 15px;
+  }
+  .join-btn {
+    right: 30%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    margin-top: 70vh;
+  }
+}
+@media (min-width: 540px) and (max-width: 1030px) {
+  .subscribe__page {
+    background-image: url("../../images/subscribe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .subscribe__page .album__info {
+    color: white;
+    left: 50%;
+    right: 50%;
+    transform: translate(-69%, -50%);
+    position: absolute;
+    width: 600px;
+    margin-top: 90vh;
+    margin-left: 15vh;
+    text-align: right;
+  }
+  .subscribe__page .album__info h2 {
+    letter-spacing: 0px;
+  }
+  .subscribe__page .album__info h1 {
+    text-transform: uppercase;
+    color: #bfbfbf;
+  }
+  .subscribe__page .author__name {
+    color: #fff;
+    position: absolute;
+    left: 43.8%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 42vh;
+    font-size: 32px;
+  }
+  .subscribe__page .author__name .further-dean {
+    margin-left: 4vh;
+  }
+  .subscribe__page .author__name .further {
+    margin-left: 7vh;
+  }
+  .subscribe__page .author__name .further .red {
+    color: #cf383e;
+  }
+  .subscribe__page .music__cover {
+    float: right;
+    margin-right: 3vh;
+  }
+  .subscribe__page .music__cover img {
+    height: 400px;
+    width: 300px;
+  }
+  .subscribe__page .subscribe__text {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .subscribe__page h2 {
+    display: inline-flex;
+    letter-spacing: 15px;
+  }
+  .join-btn {
+    right: 65%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    margin-top: 89vh;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */
